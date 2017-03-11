@@ -10,7 +10,7 @@ $password="";
 $database="database";
 
 // Create connection
-$conn = new mysql(localhost, $username, $password);
+$con = new mysql(localhost, $username, $password);
 
 // Check connection
 if (mysqli_connect_error()) {
@@ -18,5 +18,5 @@ if (mysqli_connect_error()) {
 }
 echo "Connected successfully";
 
-mysqli_close($conn);
+mysqli_close($con);
 
